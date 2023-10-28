@@ -5,12 +5,9 @@ import numpy as np
 import time
 
 # Speed of the drone
-# 无人机的速度
 S = 60
 # Frames per second of the pygame window display
 # A low number also results in input lag, as input information is processed once per frame.
-# pygame窗口显示的帧数
-# 较低的帧数会导致输入延迟，因为一帧只会处理一次输入信息
 FPS = 120
 
 
@@ -23,16 +20,6 @@ class FrontEnd(object):
             - Arrow keys: Forward, backward, left and right.
             - A and D: Counter clockwise and clockwise rotations (yaw)
             - W and S: Up and down.
-
-        保持Tello画面显示并用键盘移动它
-        按下ESC键退出
-        操作说明：
-            T：起飞
-            L：降落
-            方向键：前后左右
-            A和D：逆时针与顺时针转向
-            W和S：上升与下降
-
     """
 
     def __init__(self):
